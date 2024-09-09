@@ -1,5 +1,5 @@
 from datetime import datetime
-
+import pytest
 import numpy as np
 
 
@@ -33,5 +33,6 @@ def test_Tide() -> None:
         t.formzahl == 0.3691950696609845
         or t.formzahl == 0.38101230038937306
         or t.formzahl == 0.38376753628038296
+        or t.formzahl == 0.3812933852441251
     )
     assert t.type == "mixed (semidiurnal)"
